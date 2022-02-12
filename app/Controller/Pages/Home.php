@@ -2,6 +2,8 @@
 
 namespace App\Controller\Pages;
 
+use App\Utils\View;
+
 class Home
 {
     /**
@@ -11,6 +13,6 @@ class Home
      */
     public static function getHome()
     {
-        return 'Olá mundo!';
+        return View::render('pages/home');
     }
 }
