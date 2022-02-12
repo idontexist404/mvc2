@@ -1,5 +1,7 @@
 <?php
 
+use App\Controller\Pages\Home;
+
 require __DIR__ . '/../vendor/autoload.php';
 
-echo "Hello!";
+echo Home::getHome();
