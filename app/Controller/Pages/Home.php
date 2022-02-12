@@ -13,6 +13,10 @@ class Home
      */
     public static function getHome()
     {
-        return View::render('pages/home');
+        return View::render('pages/home', [
+            'name' => 'Evil Corp.',
+            'description' => '(•̀ᴗ•́)و ̑̑  Large super-corporation that is very big. And evil!',
+            'site' => 'https://www.evilcorp.com/'
+        ]);
     }
 }
